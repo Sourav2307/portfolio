@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dc23f024fe.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="image/Logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#portfolio">My Work</a></li>
+                        <li><a href="#Certificates">Certificates</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Java Developer</p>
+                    <h1>Hi, I'm <span>Sourav</span><br>Ghosh from Kolkata</h1>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------about----------------------------- -->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/bg-img.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am pursuing my MCA degree from RCC Institute of Information Technology. And have done some project
+                            in real world. I have completed the course in Full Stack using Java. I am also a quick learner and 
+                            responsible.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Language</span><br>Java, Python, C</li>
+                                <li><span>Technical</span><br>Data Structure, DBMS</li>
+                                <li><span>Front-End</span><br>HTML, CSS, JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Home Automation using Java</span><br>Graduation Internship Project<br>
+                                    2022</li>
+                                <li><span>About Bus</span><br>Full Stack Development Project<br>
+                                    2023</li>
+                                <li><span>Face Detection and Recognition using Python</span><br>Minor Project<br>
+                                    2023</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>RCC Institute of Information Technology</span><br>MAKAUT<br>Master's in Computer Application<br>2024</li>
+                                <li><span>Vivekananda Mahavidhyalaya</span><br>The University of Burdwan<br>Bachelor's of Computer Application<br>2022</li>
+                                <li><span>Vivekananda Academy</span><br>CBSE<br>Higher Secondary<br>2019</li>
+                                <li><span>Central Model School</span><br>CBSE<br>Secondary<br>2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- --------------------------Portfolio--------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/p1.png">
+                        <div class="layer">
+                            <h3><b>Home Automation using Java</b></h3>
+                            <p>In this project we have created a prototype model and
+                                connected it with our software to make the device smart
+                                and responsive.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/p2.png">
+                        <div class="layer">
+                            <h3><b>About Bus</b></h3>
+                            <p>This was an real world web project which deals with the 
+                                Kolkata local bus fare and details so that passengers 
+                                could not be cheated any more with the bus fare.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/p3.jpg">
+                        <div class="layer">
+                            <h3><b>Face Detection and Recognition using Python</b></h3>
+                            <p>It was an research based project where we detect the face
+                                from a video and generate a face dataset and recognition 
+                                by CNN model.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+<!-- ---------------------------------My Certificates----------------------------- -->
+<div id="Certificates">
+    <h1 class="container sub-title">My Certificates</h1>
+    <div class="portfolio-container">
+        <div class="image-slider">
+            <img src="image/c1.jpg" alt="Image 1">
+            <div class="image-text"><p>This the Internship Certificate of my Graduation project.</p></div>
+            <img src="image/c2.jpg" alt="Image 2">
+            <div class="image-text"><p>This is the Certifacte of my Full Stack Using JAVA course.</p></div>
+            <!-- Add more images as needed -->
+        </div>
+        <div class="arrow-container">
+            <button class="arrow arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="arrow arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------contact----------------------------------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  sourav23official@gmail.com</p>
+                <p><i class="fa-brands fa-square-whatsapp"></i>  +919564402405</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rajdeepsingharoy.saheb"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/%F0%9D%9A%82%F0%9D%9A%98%F0%9D%9A%9E%F0%9D%9A%9B%F0%9D%9A%8A%F0%9D%9A%9F-%F0%9D%99%B6%F0%9D%9A%91%F0%9D%9A%98%F0%9D%9A%9C%F0%9D%9A%91-971a61232/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sourav2307"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="image/SouravGhosh CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">                    
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button id="submit" type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            // ----------------for certificate-------------------
+            document.addEventListener("DOMContentLoaded", function () {
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.image-slider img');
+            const totalImages = images.length;
+
+            function showImage(index) {
+                images.forEach(img => img.style.display = 'none');
+                images[index].style.display = 'block';
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % totalImages;
+                showImage(currentIndex);
+            }
+
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                showImage(currentIndex);
+            }
+
+            document.querySelector('.arrow-left').addEventListener('click', prevImage);
+            document.querySelector('.arrow-right').addEventListener('click', nextImage);
+        });
+        </script>
+
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzJaZVD9-uioLalEiNupfbbDEdoNUGMm1kA4KTfno6OQxCUpPlo9LuR3GUQ_Z6o8Wmm/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              console.log('Form Submitted');
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                     if (response.ok) {
+                        msg.innerHTML = "Message sent successfully";
+                        setTimeout(function() {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    } else {
+                        console.error('Error!', response.status);
+                    }
+                })
+                .catch(error => console.error('Error!', error.message));
+            })
+          </script>
+    </body>
+</html>
